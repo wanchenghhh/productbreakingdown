@@ -1,0 +1,8 @@
+{
+  "name": "ai-product-teardown-docs",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node scripts/build-site.mjs" },
+  "devDependencies": { "marked": "17.0.5" },
+  "engines": { "node": ">=20" }
+}
