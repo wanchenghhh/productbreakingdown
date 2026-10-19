@@ -2,7 +2,7 @@
 
 围绕真实任务分析 AI 产品的商业定位、用户旅程、人机分工、Agent 机制、模型费用及基础资源，用证据还原产品架构。
 
-- [在线阅读](https://wanchenghhh.github.io/ai-product-teardown/)
+- [在线阅读](https://wanchenghhh.github.io/productbreakingdown/)
 - [Skill 主文件](ai-product-teardown/SKILL.md)
 - [下载 Skill 压缩包](ai-product-teardown.zip)
 
