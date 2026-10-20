@@ -1,9 +1,10 @@
 # AI 产品拆解 Skill
 
-围绕真实任务分析 AI 产品的商业定位、用户旅程、人机分工、Agent 机制、模型费用及基础资源，用证据还原产品架构。
+严格按思敏老师材料的六大部分及下级目录编写报告：拆解思路、产品介绍、效果体验、产品定位、产品拆解、架构总结。围绕真实任务取证，保留已经明确确认与待确认核实、二次验证及架构图。
 
 - [在线阅读](https://wanchenghhh.github.io/productbreakingdown/)
 - [Skill 主文件](ai-product-teardown/SKILL.md)
+- [报告目录规范](ai-product-teardown/references/report-structure.md)
 - [下载 Skill 压缩包](ai-product-teardown.zip)
 
 ## 使用

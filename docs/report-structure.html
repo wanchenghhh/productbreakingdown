@@ -1,0 +1,56 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="遵循思敏老师材料的六大部分与逐级拆解栏目。"><title>报告目录 · AI 产品拆解 Skill</title><link rel="stylesheet" href="styles.css"></head><body><a class="skip" href="#content">跳转到正文</a><header><div class="wrap bar"><a class="brand" href="index.html">AI 产品拆解 Skill</a><span class="tag">AI PRODUCT TEARDOWN · V1</span></div></header><div class="wrap"><section class="hero"><div class="eyebrow">方法论与使用指南</div><h1>报告目录</h1><p>遵循思敏老师材料的六大部分与逐级拆解栏目。</p></section><div class="layout"><nav aria-label="文档导航"><a href="index.html">拆解流程</a><a href="report-structure.html" aria-current="page">报告目录</a><a href="evidence.html">取证与二次验证</a><a href="agent-analysis.html">Agent 深度分析</a><a href="outputs.html">输出与验收</a><div class="download"><a href="ai-product-teardown.zip" download>下载完整 Skill ↗</a><a href="https://github.com/wanchenghhh/productbreakingdown">GitHub 源码 ↗</a></div></nav><main id="content"><article><h1>报告目录规范</h1>
+<p>以思敏老师《以 OiiOii 为例拆解一个 Multi Agent 平台》的目录作为默认报告结构，保持六大部分、下级栏目及先后顺序。以下标题中的【产品名】【实际测试场景】【关键角色】和定位差异点按研究对象替换；编号和层级保留。用户明确指定其他结构时以用户要求为准。</p>
+<h2>标准目录</h2>
+<pre><code class="language-text">（一）拆解产品的思路
+（二）产品介绍
+（三）效果体验：用一个场景测试它的能力
+    1. 【实际测试场景】
+        1.1 测试维度
+        1.2 评估权重
+        1.3 能力维度评测表
+        1.4 分数评级
+（四）产品定位：它和其他AIGC产品有什么差异点
+    1. 【核心场景或垂直定位差异】
+    2. 【角色与任务组织差异】
+    3. 【创作或控制模式差异】
+（五）产品拆解：【产品名】是怎么把团队装进一个平台的？
+    1. 市场层拆解
+        1.1 市场情况
+        1.2 竞争格局
+    2. 商业层拆解
+        2.1 变现方式：它每天烧这么多显卡费，靠什么回本？
+        2.2 护城河：【基于产品实际情况提出的壁垒判断或假设】
+    3. 场景/用户层拆解
+        3.1 功能模块
+        3.2 使用路径
+    4. 技术层拆解
+        4.1 Agent构成
+        4.2 逐个拆解
+            4.2.1 全局上下文
+            4.2.2 【关键角色】Agent
+                4.2.2.1 逻辑梳理
+                4.2.2.2 构成推导
+                4.2.2.3 可用工具推导
+                4.2.2.4 提示词推导
+        4.3 模型范围
+        4.4 路由逻辑
+    5. 基础层拆解
+（六）架构总结：【产品名】的架构是什么样的
+</code></pre>
+<h2>填写规则</h2>
+<ul>
+<li>（一）交代研究任务、取证和分层分析思路、两类确认状态及验证方法。（二）交代产品构成、面向用户、应用场景和实际研究范围。</li>
+<li>（三）的场景必须对应实际执行或明确标注的资料分析，不沿用原案例“30秒人物向故事短片”。先定义输入和验收，再给评测表。无可用权重或覆盖不足时，在1.2、1.4说明未评分原因，不擅自给总分或照抄评级。</li>
+<li>（四）沿用三个差异点的组织方式，具体标题根据证据改写，不固定“动画垂直”“专业角色”或“托管/对话模式”为所有产品结论。差异点不足时说明未证实，不凑卖点。</li>
+<li>（五）中的护城河标题可以是待验证假设，不继承原案例的肯定结论。市场数据、价格、模型名和团队角色均需针对目标产品核实。</li>
+<li>3.2先梳理正向流程，再加入逆向流程，观察修改、拒绝、重试、回退和下游影响。这两个流程用正文标签或图组织，无需增设新的编号层级。</li>
+<li>4.1区分人工、规则、工具、工作流与可证实的Agent。4.2.1先说明上下文、资产引用、状态与修改传播；4.2.2默认分析一个关键协调角色，确有证据且有必要时，可在4.2.3及以后以同样四项分析其他角色。</li>
+<li>原例“艺术总监 Agent”替换为目标产品的对应角色，如LibTV的TV Director；没有已确认角色时保留该位置并写明“未确认独立Agent”。不能由目录要求倒推出产品必然采用多Agent。</li>
+<li>逻辑梳理写输入、处理、决策与输出；构成、工具和提示词推导分别附依据、替代解释与待核实标记。未知真实提示词时明说未知；如提供草案，标注“推导方案，未经原产品实现验证”，不冒充已确认配置。</li>
+<li>模型范围与路由逻辑保留在技术层内部；基础层资源与商业层护城河相互引用，分别说明资源事实和价值判断，避免重复堆放同一段落。</li>
+<li>（六）提供需求场景、用户、技术、模型、基础各层的架构图及文字解释。二次验证、剩余问题、证据目录和关键截图在本部分末尾用普通标签或表格组织，不新增第七部分。</li>
+<li>各步骤保留“已经明确确认”和“待确认核实”；未覆盖、未知或不适用时写明原因和证据缺口，不删去栏目，也不填造实现。</li>
+</ul>
+<h2>格式映射</h2>
+<p>报告标题使用一级标题；六大部分使用二级标题，之后依目录逐级缩进。飞书、Markdown、HTML共用相同层级。Word使用Title及Heading样式对应各级，不能只用加粗正文模拟目录。目录规范本身的说明标题不应被复制成报告章节。</p>
+</article></main></div></div><footer><div class="wrap">网页内容从 Skill 源文件生成 · 已经明确确认 / 待确认核实 · 支持网页与手机 App</div></footer></body></html>

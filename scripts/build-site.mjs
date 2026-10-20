@@ -8,6 +8,7 @@ const markedModule = process.env.TEARDOWN_MARKED_MODULE;
 const { marked } = await import(markedModule ? pathToFileURL(markedModule).href : 'marked');
 const pages = [
   { source: 'SKILL.md', file: 'index.html', title: '拆解流程', intro: '从真实任务出发，用证据还原 AI 产品如何交付结果。' },
+  { source: 'references/report-structure.md', file: 'report-structure.html', title: '报告目录', intro: '遵循思敏老师材料的六大部分与逐级拆解栏目。' },
   { source: 'references/evidence.md', file: 'evidence.html', title: '取证与二次验证', intro: '先分清哪些已经确认，再为待核实的信息补齐证据。' },
   { source: 'references/agent-analysis.md', file: 'agent-analysis.html', title: 'Agent 深度分析', intro: '先看整体执行，再拆协作分工与关键 Agent。' },
   { source: 'references/outputs.md', file: 'outputs.html', title: '输出与验收', intro: '飞书、Markdown 和 HTML 共用一套分析标准。' },

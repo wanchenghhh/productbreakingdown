@@ -1,18 +1,8 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="飞书、Markdown 和 HTML 共用一套分析标准。"><title>输出与验收 · AI 产品拆解 Skill</title><link rel="stylesheet" href="styles.css"></head><body><a class="skip" href="#content">跳转到正文</a><header><div class="wrap bar"><a class="brand" href="index.html">AI 产品拆解 Skill</a><span class="tag">AI PRODUCT TEARDOWN · V1</span></div></header><div class="wrap"><section class="hero"><div class="eyebrow">方法论与使用指南</div><h1>输出与验收</h1><p>飞书、Markdown 和 HTML 共用一套分析标准。</p></section><div class="layout"><nav aria-label="文档导航"><a href="index.html">拆解流程</a><a href="evidence.html">取证与二次验证</a><a href="agent-analysis.html">Agent 深度分析</a><a href="outputs.html" aria-current="page">输出与验收</a><div class="download"><a href="ai-product-teardown.zip" download>下载完整 Skill ↗</a><a href="https://github.com/wanchenghhh/productbreakingdown">GitHub 源码 ↗</a></div></nav><main id="content"><article><h1>输出与验收</h1>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="飞书、Markdown 和 HTML 共用一套分析标准。"><title>输出与验收 · AI 产品拆解 Skill</title><link rel="stylesheet" href="styles.css"></head><body><a class="skip" href="#content">跳转到正文</a><header><div class="wrap bar"><a class="brand" href="index.html">AI 产品拆解 Skill</a><span class="tag">AI PRODUCT TEARDOWN · V1</span></div></header><div class="wrap"><section class="hero"><div class="eyebrow">方法论与使用指南</div><h1>输出与验收</h1><p>飞书、Markdown 和 HTML 共用一套分析标准。</p></section><div class="layout"><nav aria-label="文档导航"><a href="index.html">拆解流程</a><a href="report-structure.html">报告目录</a><a href="evidence.html">取证与二次验证</a><a href="agent-analysis.html">Agent 深度分析</a><a href="outputs.html" aria-current="page">输出与验收</a><div class="download"><a href="ai-product-teardown.zip" download>下载完整 Skill ↗</a><a href="https://github.com/wanchenghhh/productbreakingdown">GitHub 源码 ↗</a></div></nav><main id="content"><article><h1>输出与验收</h1>
 <h2>共用报告内容</h2>
-<p>按用户选定格式交付同一套有证据支持的结论，避免不同格式丢失待核实状态。默认内容顺序：</p>
-<ol>
-<li>产品介绍、拆解范围与一句话定位：端别、版本或版本未知、体验日期、资料范围及核心场景。</li>
-<li>市场、竞争与商业模式：用户、需求、替代方案、差异化、种子用户与收费方式。</li>
-<li>场景测试与效果评测：输入、验收标准、输出物、实际表现、人工修改、耗时与消耗。</li>
-<li>用户旅程与人机决策：正向流程、异常与返工路径、确认点。</li>
-<li>技术流程与 Agent 机制：整体流程、责任分工；Agent 产品按需增加协作和单体分析。</li>
-<li>模型选择、路由与费用：公开模型、调用关系、选择依据、价格、任务消耗及有条件的成本估算。</li>
-<li>基础资源与壁垒：知识、数据、资产、权限、行业流程，以及积累和更新机制。</li>
-<li>架构总结与判断：需求场景在顶部，下接用户、技术、模型、基础四层；说明结果如何形成及关键瓶颈。</li>
-<li>二次验证结果及剩余缺口：独立清单；附证据目录与来源链接。</li>
-</ol>
-<p>每个分析步骤下分别列“已经明确确认”和“待确认核实”。不适用的深度内容简要说明，不为空填造。报告长度随任务深度和材料而定。</p>
+<p>按用户选定格式交付同一套有证据支持的结论，避免不同格式丢失待核实状态。报告目录严格按 <a href="report-structure.html">report-structure.md</a>，使用思敏老师材料的六大部分及下级栏目；不采用另一套市场、技术、模型等平行章节。产品专属名称与场景可替换，层级和栏目顺序保持一致。</p>
+<p>每个分析步骤下分别列“已经明确确认”和“待确认核实”。缺证据或不适用的栏目写明边界及下一步验证，不留空或填造。评分、Agent 和提示词等栏目保留，不意味着必须产出分数、虚拟角色或系统提示词原文。</p>
+<p>二次验证结果、剩余问题、证据目录和关键截图收在“（六）架构总结”末尾，用普通标签或表格呈现；如需独立验证清单可另交配套文件，不改变正文六部分目录。报告长度随任务深度和材料而定。</p>
 <h2>图表与评测</h2>
 <p>默认包含用户旅程、人机分工、模型与费用清单、架构总览；可在正文中使用紧凑表格或图，避免无信息重复。复杂 Agent 产品按需增加协作流程与上下文图。架构节点尽量使用名词，箭头说明调用或信息流，待核实节点明确标记并引用证据。</p>
 <p>可按端到端结果、交互共创、执行协作、基础能力建立评分维度，但不得将动画案例的指标和权重照搬到所有产品。定量评分先确定指标、可观察标准、权重及总分；无法评估的标为未评估，不填零或虚构分数。不完整评分不用于全产品评级。一次成功不能证明稳定成功率。</p>
@@ -27,6 +17,7 @@
 <p>没有写入能力或目标访问受限时，明确说明限制，先交付可导入飞书的 Markdown 与配套图片，并说明原生飞书文档尚未创建；不以复制链接或本地导出文件冒充完成。后续用户提供可用目标和权限后再写入。</p>
 <h2>交付检查</h2>
 <ul>
+<li>六大部分、下级栏目和顺序符合 report-structure.md；产品名称与测试场景已替换，无遗留示例结论。</li>
 <li>端别、版本、资料日期、实操与公开资料范围写清楚。</li>
 <li>分析围绕同一任务贯通各层，交付结果有可访问证据。</li>
 <li>每步两种状态齐全，关键待核实项已经尝试二次验证或注明所需材料。</li>
